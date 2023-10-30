@@ -7,8 +7,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/action', (req, res) => {
-  res.send('ON14');
+  const actions = ['ON16', 'ON14'];
+  const randomAction = actions[Math.floor(Math.random() * actions.length)];
+  res.send(randomAction);
 });
+
 
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
