@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/action', (req, res) => {
-  const actions = ['ON16', 'ON14'];
+  const actions = ['ON16', 'ON14', 'ON27'];
   const randomAction = actions[Math.floor(Math.random() * actions.length)];
   res.send(randomAction);
 });
