@@ -12,6 +12,7 @@ app.get('/action', (req, res) => {
   const actions = ['ON16', 'ON14', 'ON27'];
   const randomAction = actions[Math.floor(Math.random() * actions.length)];
   res.send(randomAction);
+  console.log("feedback : ", randomAction);
   count +=1;
   console.log("Server dipanggil : ", count)
 });
