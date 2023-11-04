@@ -12,6 +12,10 @@ app.get('/action', (req, res) => {
   res.send(randomAction);
 });
 
+app.get('/waduh', (req, res) => {
+  res.send("Mas irfan ganteng banget");
+});
+
 
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
